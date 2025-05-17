@@ -76,8 +76,11 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build P  roject
+    - name: Build Project
       run: mvn test
+
+    - name: Ensure unzip is installed
+      run: sudo apt-get install unzip -y
 
     - uses: actions/checkout@v4
       with:
