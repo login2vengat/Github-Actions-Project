@@ -48,6 +48,7 @@ jobs:
     - name: Gitleaks Code Scan
       run: gitleaks detect -s . -f json -r gitleaks-report.json
 
+
   test:
 
     runs-on: self-hosted
